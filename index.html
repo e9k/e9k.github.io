@@ -20,6 +20,26 @@
 		<div id="container"></div>
 		<div id="notice"></div>
 	</main>
+	<script>
+      if (/MSIE [8-9]/.test(navigator.appVersion)) {
+          var get = new XDomainRequest()
+          get.onprogress = handleData
+          get.onload = handleData
+      } else {
+          var get = new XMLHttpRequest()
+          get.onreadystatechange = handleData
+      }
+      get.open('get', '/img/google-sheets-logo.png', false)
+      get.setRequestHeader("Range", "bytes=0-200");
+      get.send()
+
+      function handleData() {
+          // process incremental data found in get.responseText
+          console.log(get.responseText.length);
+      }
+
+
+	</script>
 	<footer>
 		<p>These blog posts are from a Google Sheets backend</p>
 		<a href="https://medium.com/p/c2eab3fb0b2b">Read the article on Medium</a>
