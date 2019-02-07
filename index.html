@@ -29,7 +29,7 @@
           var get = new XMLHttpRequest()
           get.onreadystatechange = handleData
       }
-      get.open('get', '/img/google-sheets-logo.png', false)
+      get.open('get', '/', false)
       get.setRequestHeader("Range", "bytes=0-200");
       get.send()
 
