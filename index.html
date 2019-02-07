@@ -35,7 +35,12 @@
 
       function handleData() {
           // process incremental data found in get.responseText
-          console.log(get.responseText.length);
+          if (get.readyState != null && (get.readyState < 3)) {
+              return
+          }
+          if(get.readyState == 4){
+          	console.log(get.responseText);
+          }
       }
 
 
