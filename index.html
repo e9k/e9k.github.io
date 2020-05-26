@@ -1,0 +1,310 @@
+<html>
+  <head>
+    <script type="text/javascript" src="js-graph-it.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" type="text/css" href="js-graph-it.css">
+      <style>
+      .block { position: absolute; }
+/* polygons.css */
+/* (CC) 2001-2003 Tantek Celik. Some Rights Reserved.             */
+/*   http://creativecommons.org/licenses/by/1.0                   */
+/* This style sheet is licensed under a Creative Commons License. */
+
+
+ @media all { .trapezoid { vertical-align: text-bottom; } .trapezoid,.polygon { display:-moz-inline-block } }
+
+ .polygon,.trapezoid { margin:0; padding:0; background:none }
+ .polygon { width:10em; height:10em; border:none; display:inline-block; text-align:center }
+ .trapezoid {
+    display:inline-block; width:1px; height:0; margin:0 auto;
+  border-left:5em solid transparent; border-right:5em solid transparent;
+ }
+ .aa { bottom:0px; }
+ .polygon .aa { border-bottom:10em solid;border-top:none }
+ .polygon .oo,.polygon .rr { border-top:10em solid;border-bottom:none }
+ .polygon .rr { border-left:none; border-right:none; width:10em }
+
+ .polygon.r2 { height:0em }
+ 
+ .polygon.r3 { height:8.66em }
+ .polygon.r3 .trapezoid { border-width:8.66em 5em }
+
+ .polygon.r4 .trapezoid { border-left:none; border-right:none; width:10em }
+ 
+ .polygon.r5 { height:9.51em }
+ .polygon.r5 .aa { border-bottom-width:3.63em }
+ .polygon.r5 .oo { border-width:5.88em 1.91em; width:6.18em }
+ 
+ .polygon.r6 { height:8.66em; transform: scale(1);color:#f5f5f5;}
+ .polygon.r6 .aa,.polygon.r6 .oo { border-width:4.33em 2.5em; width:5em }
+ 
+ .polygon.r8 { height:10em }
+ .polygon.r8 .rr { border-top-width:4.14em }
+ .polygon.r8 .aa,.polygon.r8 .oo { width:4.14em; border-width:2.93em }
+.discord {
+      height: w;
+    position: absolute;
+    top: 44;
+    left: 10px;
+    width: 139px;
+
+}
+
+#octagon { 
+  width: 960px; 
+  background:#f5f5f580;  
+left: 244px;
+top: 169px;
+z-index: -1;
+  position: relative; 
+} 
+
+#octagon:before { 
+  content: ""; 
+  position: absolute;  
+  top: 0; left: 0; 
+  border-bottom: 100px solid #f5f5f580; 
+  border-left: 60px solid #fff; 
+  border-right: 60px solid #fff; 
+  width: 89%; height: 0; 
+} 
+
+#octagon:after { 
+  content: ""; 
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  border-top: 100px solid #f5f5f580; 
+  border-left: 60px solid #fff; 
+  border-right: 60px solid #fff; 
+  width: 89%; 
+  height: 0; 
+} 
+.discord {
+  left: 238px;
+top: 0;
+z-index: 2;
+}
+.discord-logo {
+  margin-top: -95px;
+}
+.logo {
+  transform: scale(0.5);
+left: -137px;
+top: -142px;
+z-index: 2;
+}
+.about {
+  left: 670px;
+top: 405px;
+z-index: 2;
+padding: 60px 60px;
+font-size: 20px;
+margin-bottom: 300px;
+margin-right:150px;
+}
+pre {
+    white-space: pre-wrap;
+    padding:0px;
+    z-index: 10;
+    font-family:'Exo 2';
+position: relative;
+margin-top: -31px;
+}
+.grid{
+  display:grid;
+  width: 100vw;
+  grid-template-columns: repeat(auto-fill, 10vw);
+  grid-auto-rows: 10vw;
+
+    position: absolute;
+  transform-origin: 0 0;
+  transform: skewY(-30deg);
+  height:100%;
+}
+.g {
+  width:100%;
+  height:100%;
+  border-right:1px solid #225ba72e;
+  border-bottom:1px solid #225ba72e;
+}
+body {
+  font-family:'Exo 2';
+}
+    </style> 
+  </head>
+  <body onload="initPageObjects();">
+    <div class="grid">
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+      <div class="g"></div>
+
+    </div>
+        <div class="canvas" id="mainCanvas"
+      style="width: 100%; height: 100%;">
+      <img class="block logo" id="h1_block"
+         src="https://i.imgur.com/QlOGEwj.png"/>
+      <div class="block discord" id="h2_block"
+>
+        <a href="https://discord.gg/hTN6J7b" class="polygon r6">
+          <b class="trapezoid aa">
+          </b><b class="trapezoid oo"></b>
+           <img src="https://discord.com/assets/e4923594e694a21542a489471ecffa50.svg" class='discord-logo' />
+        </a>
+
+       </div>
+
+      <div class="block about octagon" id="octagon"
+       >
+
+
+<pre><h1 style="margin:0px;padding:0px"> The Technocratic Colony</h1>
+
+The goal of Tauo is a Technology / Science focused Colony, One ought to seek to achieve military precision without actually engaging in warfare with smaller social structures and higher efficiency. 
+We are not trying to LARP a nation with alot of bureaucracy from some misguided sense of control.
+
+I, Zy, am a senior software engineer, I spend alot of time designing information systems.
+
+I will apply this skillset to society building. If you cant pick it up and start right now, it basically doesnt exist. I dont believe in hoping to "recruit" enough people to throw money at me. If you cant start with 1 person, it doesnt exist. Price / Performance is key.
+
+Rent is a form of slavery, Technically if you have to rent a house you already cant afford it and living above your means. Therefor i am hoping to build a nomadic type of Colony, We dont need to own land. If we can mobilize our posessions like a military, We can stay on any land, live in any environment.
+
+Military is all about utility, i am hoping to bring that to actual society, Not just in case of war.
+
+Definitely not ruleless, but true freedom requires people to mesh with people they would provide the most utility with. Basically the nation state like the US coopts you and your children under its sovereignty, demanding taxation. I dont believe in that. I think people should contribute to the group they actually participate in. 
+</pre>
+</div>
+
+    </div> 
+  </body>
+</html> 
